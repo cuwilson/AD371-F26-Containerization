@@ -34,7 +34,7 @@ services:
         max-file: "3"
 
   proxy:
-    image: nginxinc/nginx-unprivileged:stable-alpine
+    image: nginxinc/nginx-unprivileged@sha256:f5116ed4606f3eb015dd4a8e28cb9b351476dc0ad4bc6e9f93b19cec130cdf03
     depends_on:
       web:
         condition: service_healthy
